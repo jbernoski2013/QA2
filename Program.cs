@@ -58,9 +58,17 @@ namespace PROG2070A2
                         Console.WriteLine("Please Enter a number");
                         goto Retry3;
                     }
+                    if (dem1 + dem2 > dem3 && dem1 + dem3 > dem2 && dem2 + dem3 > dem1 && dem1 > 0 && dem2 > 0 && dem3 > 0)
+                    {
+                        Console.WriteLine("Forms a Triangle");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Does not form a triangle");
+                    }
 
-                    trianglesolver.analyze(dem1, dem2, dem3);
-                    Console.ReadLine();
+                        TriangleSolver.analyze(dem1, dem2, dem3);
+                        Console.ReadLine();
 
                     goto Restart;
                    
