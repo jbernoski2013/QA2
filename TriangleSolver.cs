@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace PROG2070A2
 {
-    class TriangleSolver
+    public class TriangleSolver
     {
-
+       
+       
     }
 }
