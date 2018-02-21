@@ -6,23 +6,20 @@ using System.Threading.Tasks;
 
 namespace PROG2070A2
 {
-    class TriangleSolver
+    public class TriangleSolver
     {
        
-        public  void analyze(decimal a, decimal b, decimal c)
+        public static string analyze(decimal dem1, decimal dem2, decimal dem3)
         {
-            if(a + b > c && a + c > b && b + c > a)
-            {
-                Console.WriteLine("Forms a triangle");
-                if (a == b && b == c)
+                if (dem1 == dem2 && dem2 == dem3 && dem1 > 0 &&  dem1 >0 && dem2 > 0 && dem3 > 0)
                 {
                     Console.WriteLine("Triangle is an equilateral");
                 }
-                else if (a == b || a == c || b == c)
+                else if (dem1 == dem2 || dem1 == dem3 || dem2 == dem3 && dem1 > 0 && dem2 > 0 && dem3 > 0)
                 {
                     Console.WriteLine("Traingle is an isosceles");
                 }
-                else if (a != b && b != c && c != a)
+                else if (dem1 != dem2 && dem2 != dem3 && dem3 != dem1 && dem1 > 0 && dem2 > 0 && dem3 > 0)
                 {
                     Console.WriteLine("Triangle is Scalene");
                 }
@@ -30,14 +27,10 @@ namespace PROG2070A2
                 {
                     Console.WriteLine("Error");
                 }
-            }
-            else
-            {
-                Console.WriteLine("Does not form a triangle");
-            }
+
+            return ("Good Luck");
            
         }
-
-        
+  
     }
 }
